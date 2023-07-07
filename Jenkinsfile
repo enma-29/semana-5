@@ -5,7 +5,7 @@ pipeline {
     stage('jenkins') {
       steps {
         sh '''
-          echo 1234 | root -S docker-compose up -d --build
+          echo 1234 | sudo -S docker-compose up -d --build
           ls
         '''
       }
