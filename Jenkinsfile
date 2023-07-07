@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('jenkins') {
       steps {
-        sh 'sudo docker compose up -d --build'
+        sh 'docker compose up -d --build'
         sh 'ls' 
       }
     }
