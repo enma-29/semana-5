@@ -1,13 +1,14 @@
 pipeline {
   agent any
+
   stages {
     stage('jenkins') {
       steps {
-        sh 'sudo docker compose up -d --build'
-        sh 'ls' 
+        sh '''
+          echo 1234 | sudo -S docker-compose up -d --build
+          ls
+        '''
       }
-      
     }
-
   }
 }
