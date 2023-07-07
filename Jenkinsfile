@@ -6,6 +6,7 @@ pipeline {
         sh 'docker compose up -d --build'
         sh 'ls' 
       }
+      
     }
 
   }
